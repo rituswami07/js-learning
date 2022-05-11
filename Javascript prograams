@@ -1,0 +1,22 @@
+write a function to add, minus, multiplication, divide two number ? (4 programs);
+wtirte a program to print a string in any html tag ?
+write a program to add two strings (with gap) ?
+
+
+<input id="inp1" name='inp1'/><br/>
+<input id="inp2" name='inp2'/><br/>
+<input id="inp3" name='inp3'/><br/>
+
+<button onclick="submit()"> Submit</button>
+
+function submit() {
+
+  let input1 = document.getElementById('inp1').value;   
+  console.log(input1)
+}
+
+ 
+
+
+
+

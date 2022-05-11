@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4 Programs</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <h2>What Can JavaScript Do</h2>
+     <p>JavaScript can change HTML attribute values.</p>
+
+     <p>In this case JavaScript change the value of the src (source) attribute of an image.</p>
+
+     <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+     <img id="myImage" src="/home/ritu/Workshop/W3school-Project/Web-Dev-Learning/new-site/pic_bulboff.gif" style="width:100px">
+
+     <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+     <p id="demo"></p>
+
+     <script>
+         document.getElementById("demo").innerHTML = 10.50;
+     </script>
+
+     <p>Strings can be written with double or single quotes.</p>
+
+     <p id="demo5"></p>
+
+     <script>
+         let carName1 = "Volvo XC60"; // Double quotes
+         let carName2 = 'Volvo XC60'; // Single quotes
+
+         document.getElementById("demo5").innerHTML = carName1 + " " + carName2;
+     </script>
+
+     <p id="demo6"></p>
+
+     <script>
+         let answer1 = "It's alright";
+         let answer2 = "He is called 'Johnny'";
+         let answer3 = 'He is called "Johnny"';
+
+         document.getElementById("demo6").innerHTML = answer1 + "<br>" + answer2 + "<br" + answer3;
+     </script>
+
+     <p id="demo7"></p>
+
+     <script>
+         let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+         document.getElementById("demo7").innerHTML = text.length;
+     </script>
+
+     <p id="demo8"></p>
+
+     <script>
+         let x = 16 + "Volvo";
+         document.getElementById("demo8").innerHTML = x;
+     </script>
+
+     <p id="demo1"></p>
+
+     <script>
+         document.getElementById("demo1").innerHTML = typeof"" + "<br>" +
+         typeof "John" + "<br>" + typeof "John Doe";
+     </script>
+
+     <p id="demo2"></p>
+
+     <script>
+         document.getElementById("demo2").innerHTML =
+         typeof 0 + "<br>" +
+         typeof 314 + "<br>" +
+         typeof 3.14 + "<br>" +
+         typeof(3) +"<br>" +
+         typeof(3 + 4);
+     </script>
+
+     <p id="demo3"></p>
+
+     <script>
+         document.getElementById("demo3").innerHTML = car + "<br>" + typeof car;
+     </script>
+ </body>
+ </html>   
