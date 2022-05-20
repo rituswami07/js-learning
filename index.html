@@ -1,84 +1,172 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>4 Programs</title>
-    <link rel="stylesheet" href="style.css">
- </head>
- <body>
-     <h2>What Can JavaScript Do</h2>
-     <p>JavaScript can change HTML attribute values.</p>
+    <head>
+        <script src="string.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+<body>
+   <p id="demo"></p>
+   
+   <script>
+       const pi = 3.14;
+       let per = "John Doe";
+       let answer = 'Yes I am!';
 
-     <p>In this case JavaScript change the value of the src (source) attribute of an image.</p>
+       document.getElementById("demo").innerHTML = pi + "<br>" + per + "<br>" + answer;
+   </script>
 
-     <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+   <p id="demo1"></p>
 
-     <img id="myImage" src="/home/ritu/Workshop/W3school-Project/Web-Dev-Learning/new-site/pic_bulboff.gif" style="width:100px">
+   <script>
+       let car = "Volvo";
+       document.getElementById("demo1").innerHTML = car;
+   </script>
 
-     <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+   <p id="demo2"></p>
 
-     <p id="demo"></p>
+   <script>
+       let person = "John Doe",
+       carName = "Volvi" ,
+       price = 200;
+       document.getElementById("demo2").innerHTML = carName;
+   </script>
 
-     <script>
-         document.getElementById("demo").innerHTML = 10.50;
-     </script>
+   <p id="demo3"></p>
 
-     <p>Strings can be written with double or single quotes.</p>
+   <script>
+       let x = 5 + 2 + 3;
+       let y = 2 + 3 + "5";
+       document.getElementById("demo3").innerHTML = x;
+       document.getElementById("demo3").innerHTML = y;
+   </script>
+   <h2>String program</h2>
 
-     <p id="demo5"></p>
+   Student name : <input type="text" id="test1" /><bar/><bar/>
 
-     <script>
-         let carName1 = "Volvo XC60"; // Double quotes
-         let carName2 = 'Volvo XC60'; // Single quotes
+   <button onClick="info()">Submit</button>
 
-         document.getElementById("demo5").innerHTML = carName1 + " " + carName2;
-     </script>
+   Result : <div id="result"></div>
 
-     <p id="demo6"></p>
+   Class : <input type="text" id="text2" /><bar/><bar/>
 
-     <script>
-         let answer1 = "It's alright";
-         let answer2 = "He is called 'Johnny'";
-         let answer3 = 'He is called "Johnny"';
+   <button onClick="info1()">Submit</button>
 
-         document.getElementById("demo6").innerHTML = answer1 + "<br>" + answer2 + "<br" + answer3;
-     </script>
+   Result : <div id="result"></div>
 
-     <p id="demo7"></p>
+   Roll no : <input type="text" id="text3" /><bar/><bar/>
 
-     <script>
-         let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-         document.getElementById("demo7").innerHTML = text.length;
-     </script>
+   <button onClick="info2()" >Submit</button><br/><br/>
 
-     <p id="demo8"></p>
+   Result : <div id="result"></div>
 
-     <script>
-         let x = 16 + "Volvo";
-         document.getElementById("demo8").innerHTML = x;
-     </script>
+   <p id="text4">Good Evening!</p>
 
-     <p id="demo1"></p>
+   <script>
+       if (new Date().getHours() < 18) {
+           document.getElementById("text4").innerHTML = "Good day"
+       }
+   </script>
 
-     <script>
-         document.getElementById("demo1").innerHTML = typeof"" + "<br>" +
-         typeof "John" + "<br>" + typeof "John Doe";
-     </script>
+   <p id="text5"></p>
 
-     <p id="demo2"></p>
+   <script>
+       const hour = new Date().getHours();
+       let greeting;
 
-     <script>
-         document.getElementById("demo2").innerHTML =
-         typeof 0 + "<br>" +
-         typeof 314 + "<br>" +
-         typeof 3.14 + "<br>" +
-         typeof(3) +"<br>" +
-         typeof(3 + 4);
-     </script>
+       if (hour < 18) {
+           greeting = "Good Day";
+       } else {
+           greeting = "Good evening";
+       }
 
-     <p id="demo3"></p>
+       document.getElementById("text4").innerHTML = greeting;
+   </script>
 
-     <script>
-         document.getElementById("demo3").innerHTML = car + "<br>" + typeof car;
-     </script>
- </body>
- </html>   
+   <p id="text5"></p>
+
+   <script>
+       const time = new Date().getHours();
+       let greetning;
+       if (time < 10) {
+           greeting = "Good morning";
+       } else if (time < 20) {
+           greeting = "Good day";
+       }else {
+           greeting = "Good evening"
+       }
+
+       document.getElementById("text5").innerHTML = greeting;
+   </script>
+
+    <buttom onClick="myFunction()">Try it</buttom><br>
+
+    <div id="myDIV"></div> 
+    <div class="mystyle">
+    I am a DIV element</div>
+
+    <div class="mystyle">
+        I am a also DIV element0
+    </div>
+    <br>
+
+    <h2>If Else program</h2>
+
+    clock : <input type="text" id="text6" /><br/><br/>
+    
+    <button onClick="day()">Submit</button>
+
+    Result : <div id="result"></div>
+
+    age   : <inpuy type="text" id="text6" /><br/><br/>
+
+    <button onClick="num()">Submit</button>
+
+    Result : <div id="result"></div>
+
+
+    <h1>JavaSript Statements</h1>
+    <h2>The if...else Statements</h2>
+
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+    <p>Click the light bulb to turn on/off the light.</p>
+
+    <p>Please input a number between 1 and 10:</p>
+
+    <input id="numb" type="text">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="demo"></p>
+
+    <p> I'm thinking of a letter. Guess which: a, b, c, d, or e ?</p>
+
+    <input id="myInput" type="text">
+
+    <button onclick="myScore()">Try it</button>
+
+    <p id="demo4"></p>
+
+    <p>Driving permision</p>
+
+    <input id="numb1" type="text">
+
+    <button type="button" onclick="age()">Submit</button>
+
+    <p id="demo5"></p>
+
+    <p>Admmision</p>
+
+    <input id="info" type="text">
+
+    <button onclick="stdt()">Submit</button><br>
+
+    <input id="info2" type="text">
+
+    <button onclick="stdt()">Submit</button>
+
+    <p id="demo6"></p>
+
+   </body>
+   </html>
