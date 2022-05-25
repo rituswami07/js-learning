@@ -51,13 +51,13 @@ function myFunction() {
 function day() {
     let clock  = document.getElementById("day").value;
 
-    document.getElementById("result").innerHTML = clock;
+    document.getElementById("result5").innerHTML = clock;
 }
 
 function num () {
     let age = document.getElementById("num").value;
 
-    document.getElementById("result").innerHTML = age;
+    document.getElementById("result6").innerHTML = age;
 }
 
 function changeImage() {
@@ -87,7 +87,7 @@ function myFunction() {
     } else {
         text = "Input OK";
     }
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo8").innerHTML = text;
 }
 
 function myScore() {
@@ -155,4 +155,32 @@ function num() {
     }
 
     document.getElementById("demo7").innerHTML = text;
+}
+
+function meet() {
+       var age = document.getElementById("name").value;
+       var y = 30;
+       var text;
+
+       if (age >= y) {
+           text = "Enter";
+       } else {
+           text = "No entry";
+       }
+
+     document.getElementById("check").innerHTML = text;  
+}
+
+function meet1() {
+    var age = document.getElementById("name2").value;
+    var y = 20;
+    var text;
+
+    if (age == y) {
+        text = "Enter";
+    } else {
+        text = "No entry";
+    }
+
+    document.getElementById("check2").innerHTML = text;
 }

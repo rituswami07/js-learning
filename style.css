@@ -4,15 +4,15 @@ html {
     color:red;
 }
 
-.body {
-    color: red;
+body {
+    text-align: center;
     height: 100%;
     width: 100%;
-    background-color:cadetblue;
+    background-color:rgb(226, 236, 181);
     scroll-behavior: auto;
-    text-align: center;
 }
 
-.h2 {
+h2 {
+    color:darkseagreen;
     text-align: center;
 }
