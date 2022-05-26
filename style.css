@@ -12,6 +12,16 @@ body {
     scroll-behavior: auto;
 }
 
+header {
+    padding: 80px;
+    background: #1abc9c;
+    color: white;
+}
+
+h1 {
+    color: blue;
+}
+
 h2 {
     color:darkseagreen;
     text-align: center;
