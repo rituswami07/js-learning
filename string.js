@@ -17,29 +17,6 @@ function info2() {
     document.getElementById("result3").innerHTML = roll;
 } 
 
-// check if the number is positive 
-
-const number = prompt("Enter a number: ");
-
-// check if number is greater than 0
-if (number > 0) {
-    // the body of the if statement
-    console.log("The number is positive");
-}
-
-console.log("The if statement is easy");
-
-    var one = prompt("Enter the first number");
-    var two = prompt("Enter the second number");
-    one = parseInt(one);
-    two = parseInt(two);
-    if  (one == two)
-         document.write(one + " is equal to " + two + ".");
-      else if  (one<two)
-          document.write(one + " is less than " + two + ".");
-      else
-          document.write(one + " is greater than " + two + ".");
-
 function myFunction() {
     var x = document.getElementsByTagName("DIV")[0];
 
@@ -49,13 +26,13 @@ function myFunction() {
 }
 
 function day() {
-    let clock  = document.getElementById("day").value;
+    let clock  = document.getElementById("text6").value;
 
     document.getElementById("result5").innerHTML = clock;
 }
 
-function num () {
-    let age = document.getElementById("num").value;
+function num() {
+    let age = document.getElementById("text7").value;
 
     document.getElementById("result6").innerHTML = age;
 }

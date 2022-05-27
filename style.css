@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    text-align: center;
     height: 100%;
     width: 100%;
     background-color:rgb(226, 236, 181);
@@ -14,15 +13,16 @@ body {
 
 /* Header/logo Title */
 .header {
-    padding: 80px;
+    text-align: center;
+    padding: 60px;
     background: #1abc9c;
     color: white;
     font-weight: 300;
 }
 
 .header-left {
-    margin-top: 5px;
-    
+    margin-top: -15px;
+    margin-left: 10px;
 }
 
 .navbar a {
@@ -48,17 +48,31 @@ body {
 }
 
 .row {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-}
-
-h1 {
-    color: blue;
+    flex-wrap: column;
 }
 
 h2 {
-    color:darkseagreen;
+    color:blue;
     text-align: center;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    margin-left: 30px;
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+main{
+    flex: 70%;
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
 }
 
 /* Resposive layout - when the screen is less than 700px wide, make the two
@@ -68,3 +82,9 @@ columns stack on top of each other instead of next to each other */
         flex-direction: column;
     }
 }
+
+/* Responsive layout - when the scree is less than 400px wide, make the navigation links 
+stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+
+} 
