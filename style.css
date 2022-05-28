@@ -31,6 +31,7 @@ body {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    color: white;
 }
 
 .navbar a:right {
@@ -88,6 +89,7 @@ main{
     width: 40%;
     padding: 20px;
     float: left;
+    margin-left: 10%;
 }
 
 .fakeimg3 {
