@@ -55,7 +55,6 @@ body {
 
 h2 {
     color:blue;
-    text-align: center;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -73,6 +72,28 @@ main{
     background-color: #aaa;
     width: 100%;
     padding: 20px;
+}
+
+/* Fack image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 40%;
+    padding: 20px;
+    float: right;
+    margin-top: -20%;
+}
+
+.fakeimg2 {
+    background-color: #aaa;
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
 }
 
 /* Resposive layout - when the screen is less than 700px wide, make the two
