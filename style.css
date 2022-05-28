@@ -80,7 +80,7 @@ main{
     width: 40%;
     padding: 20px;
     float: right;
-    margin-top: -20%;
+    margin-top: 10%;
 }
 
 .fakeimg2 {
@@ -90,7 +90,15 @@ main{
     float: left;
 }
 
+.fakeimg3 {
+    background-color:cyan;
+    width: 40%;
+    padding: 20px;
+    float: right;
+}
+
 .footer {
+    margin-top: 20%;
     padding: 20px;
     text-align: center;
     background: #ddd;
