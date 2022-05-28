@@ -94,7 +94,7 @@ main{
     background-color:cyan;
     width: 40%;
     padding: 20px;
-    float: right;
+    margin-left: 30%;
 }
 
 .footer {
