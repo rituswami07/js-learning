@@ -61,7 +61,7 @@ h2 {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-    margin-left: 30px;
+    text-align: center;
     flex: 30%;
     background-color: #f1f1f1;
     padding: 20px;
@@ -89,7 +89,8 @@ main{
     width: 40%;
     padding: 20px;
     float: left;
-    margin-left: 10%;
+    margin-left: 30%;
+    margin-top: 50px;
 }
 
 .fakeimg3 {
@@ -97,6 +98,7 @@ main{
     width: 40%;
     padding: 20px;
     margin-left: 30%;
+    margin-top: 50px;
 }
 
 .footer {
