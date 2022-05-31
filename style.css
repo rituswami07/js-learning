@@ -108,6 +108,11 @@ main{
     background: #ddd;
 }
 
+.last-class {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
 /* Resposive layout - when the screen is less than 700px wide, make the two
 columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
