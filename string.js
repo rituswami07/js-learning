@@ -1,5 +1,13 @@
 function info() {
     let name    =  document.getElementById("text1").Value;
+    let text;
+
+    // if the strat with letter "a" "b"
+    if (name == "a" || name == "b") {
+    text = "Ok";
+    } else {
+    text    = "Ok"
+    }
 
     document.getElementById("result").innerHTML = name;
 
