@@ -6,10 +6,10 @@ function info() {
     if (name == "a" || name == "b") {
     text = "Ok";
     } else {
-    text    = "Ok"
+    text    = "Not ok"
     }
 
-    document.getElementById("result").innerHTML = name;
+    document.getElementById("result").innerHTML = text;
 
 }
 
@@ -61,16 +61,16 @@ function myFunction() {
 
     // Get the value of input field with id="numb"
 
-    x = document.getElementById("numb").ariaValueMax;
+    x = document.getElementById("numb").value;
 
     // If x is Not a Number or less then one or greater than 10, output "input is not valid"
 
     // If x is a number between 1 and 10, output "Input OK"
 
     if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input not valid";
+        text = "Input Ok";
     } else {
-        text = "Input OK";
+        text = "Input is not valid";
     }
     document.getElementById("demo8").innerHTML = text;
 }
