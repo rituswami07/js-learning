@@ -2,8 +2,8 @@ function info() {
     let name    =  document.getElementById("text1").Value;
     let text;
 
-    // if the strat with letter "a" "b"
-    if (name == "a" || name == "b") {
+    // if the name strat with letter "a" "b"
+    if (name === "a" || name === "b") {
     text = "Ok";
     } else {
     text    = "Not ok"
@@ -39,7 +39,7 @@ function day() {
     document.getElementById("result5").innerHTML = clock;
 }
 
-function num() {
+function fir() {
     let age = document.getElementById("text7").value;
 
     document.getElementById("result6").innerHTML = age;
@@ -67,7 +67,7 @@ function myFunction() {
 
     // If x is a number between 1 and 10, output "Input OK"
 
-    if (isNaN(x) || x < 1 || x > 10) {
+    if (isNaN(x) || x < 1 || x < 10) {
         text = "Input Ok";
     } else {
         text = "Input is not valid";
@@ -98,7 +98,7 @@ function age() {
     var numb = document.getElementById("numb1").value;
     var text;
 
-    if (person  > 18) {
+    if (numb  > 18) {
         text = "Yes you can drive";
     } else {
         text = "No you can't drive";
