@@ -1,5 +1,5 @@
 function info() {
-    let name    =  document.getElementById("text1").Value;
+    let name    =  document.getElementById("text1").value;
     let text;
 
     // if the name strat with letter "a" "b"
