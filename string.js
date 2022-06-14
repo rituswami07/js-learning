@@ -1,12 +1,12 @@
 function info() {
-    let name    =  document.getElementById("text1").value;
+    let letter = document.getElementById("text1").value;
     let text;
 
     // if the name strat with letter "a" "b"
-    if (name === "a" || name === "b") {
+    if (letter === "a" || letter === "b") {
     text = "Ok";
     } else {
-    text    = "Not ok"
+    text    = "Not ok";
     }
 
     document.getElementById("result").innerHTML = text;
