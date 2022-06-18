@@ -20,6 +20,12 @@ body {
     font-weight: 300;
 }
 
+.grad1 {
+    height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
 .header-left {
     margin-top: -15px;
     margin-left: 10px;
@@ -63,6 +69,8 @@ h2 {
 }
 
 .dropbtn {
+    margin-left: 40%;
+    margin-top: -90%;
     background-color: #ee7dcc;
     color: white;
     padding: 16px;
@@ -73,7 +81,6 @@ h2 {
 
 .dropdown {
     margin-left: 95%;
-    margin-top: -5%;
     position: relative;
     display: inline-block;
 }
