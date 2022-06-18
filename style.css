@@ -120,11 +120,10 @@ h2 {
     flex: 70%;
     background-image: url(2602.jpg);
     background-repeat: no-repeat;
-    opacity: 0.5;
     width: 100%;
     padding: 20px;
     background-size: 100% 100%;
-    color: red;
+    color: white;
     text-align: center;
     font-size: 1.5rem;
 }
