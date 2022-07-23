@@ -87,36 +87,7 @@
             document.getElementById("demo4").innerHTML = o;
         </script>
 
-        <p id="demo5"></p>
         <h2>Loop input</h2>
-
-       Student marks
-        <input type="text" id="inp1" /><br/><br/>
-
-        <button onClick="submit()">Submit</button>
-
-        <script>
-            function submit() {
-                const a = 100;
-            for (i = 0; i < a; i++)
-            
-
-            document.getElementById("demo5").innerHTML = inp1;
-            } 
-        </script>
-
-        <button id="btn" onclick="doAction()">Send</button>
-
-        <script>
-            var doAction = function () {
-                var input = document.getElementById('numberinput');
-                var times = parseint(input.value);
-
-                for(var i = 0; i < times; i++) {
-                    // do whatever you need to do
-                }
-            }
-        </script>
 
         <p id="demo6"></p>
 
@@ -129,35 +100,6 @@
 
             }
             document.getElementById("demo5").innerHTML = text;
-        </script>
-
-        <p id="demo7"></p>
-
-        <tr>
-            <th>
-                Firstname
-            </th>
-            <th>
-                Lastname
-            </th>
-            <th>
-                Age
-            </th>
-        </tr>
-
-        <script>
-            const marks = ["25", "32", "47", "13", "56"];
-            text = "";
-
-            for (let i = 1; i <= marks; i++) {
-                if (marks = 35) {
-                text += "pass" + i + "<br>";
-                } else 
-                text += "fail" + i + "<br>";
-            }
-
-            document.getElementById("demo7").innerHTML = text;
-
         </script>
 
         <p id="tex"></p>
@@ -180,14 +122,14 @@
         <script>
             const name = ["Nagpur", "Jaipur", "Pune", "Sikar", "Jhunjhunu"];
 
-              document.getElementById("tex2").innerHTML = name [3];
+              document.getElementById("tex2").innerHTML = name[3];
         </script>
 
         <p id="tex3"></p>
 
         <script>
             const cla = ["1st", "2nd","3rd", "4th", "5th"];
-            cla [4] = "6th";
+            cla[4] = "6th";
             document.getElementById("tex3").innerHTML = cla;
         </script>
 
@@ -195,7 +137,7 @@
 
         <script>
             const p = ["Radhika", "Sarita", "Divya", "Garima", "Tejal"];
-            p [2] = "Nilam";
+            p[2] = "Nilam";
 
             document.getElementById("tex4").innerHTML = p;
         </script>
@@ -215,7 +157,7 @@
         <script>
             const rul = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
             let rLen = 10;
-
+                 
                 for (let i = 0; i < rLen; i++) {
                     tex +=  rul[i] + "<br>"; 
                 }
@@ -232,7 +174,7 @@
                   tel = t[i];
               }
 
-                dacoment.getElementById("web").innerHTML = tel;
+                document.getElementById("web").innerHTML = tel;
             
         </script>
 
