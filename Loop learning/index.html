@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet">
+    <body>
+        <header>
+            <img src="th.jpeg" width="100%" height="200px" alt="Javascript">
+        </header>
+        <h2>JavaScript For Loop</h2>
+
+        <p id="demo9"></p>
+
+
+        <div id="test0"></div>
+        <div id="test1"></div>
+        <div id="test2"></div>
+        <div id="test3"></div>
+        <div id="test4"></div>
+        <div id="test5"></div>
+        <div id="test6"></div>
+        <div id="test7"></div>
+        <div id="test8"></div>
+        <div id="test9"></div>
+
+        <script>
+            let a = 10;
+
+            for (let i = 0; i <= a; i++)
+            {
+                a = a + 10;
+            document.getElementById("test" + i).innerHTML = a;
+            }
+        </script>
+
+        <p id="demo"></p>
+
+        <script>
+            let text="";
+
+            for (let i = 0; i < 5; i++) {
+                text += "Hello World" + i + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <p id="demo2"></p>
+
+        <script>
+            const cars = ["BMW", "Volvo", "Saab", "Ford"];
+            let i = 0;
+            let x ="";
+
+            for (;cars[i];) {
+                x += cars[i];
+                i++;
+            }
+
+            document.getElementById("demo2").innerHTML = x;
+        </script>
+
+        <p id="demo3"></p>
+
+        <script>
+            const fruit = ["Apple", "Banana", "Mango"];
+            let u = 0;
+            let y ="";
+
+            while (fruit[u]) {
+                y += fruit[u];
+                u++;
+            }
+
+            document.getElementById("demo3").innerHTML = y;
+        </script>
+
+        <p id="demo4"></p>
+
+        <script>
+            const colour = ["Red", "Pink", "Purpal", "Blue"];
+
+            let o = "";
+            for (let z of colour) {
+                o += z + "<br>";
+            }
+
+            document.getElementById("demo4").innerHTML = o;
+        </script>
+
+        <p id="demo5"></p>
+        <h2>Loop input</h2>
+
+       Student marks
+        <input type="text" id="inp1" /><br/><br/>
+
+        <button onClick="submit()">Submit</button>
+
+        <script>
+            function submit() {
+                const a = 100;
+            for (i = 0; i < a; i++)
+            
+
+            document.getElementById("demo5").innerHTML = inp1;
+            } 
+        </script>
+
+        <button id="btn" onclick="doAction()">Send</button>
+
+        <script>
+            var doAction = function () {
+                var input = document.getElementById('numberinput');
+                var times = parseint(input.value);
+
+                for(var i = 0; i < times; i++) {
+                    // do whatever you need to do
+                }
+            }
+        </script>
+
+        <p id="demo6"></p>
+
+        <script>
+            const n = 5;
+            text = "";
+
+            for (let i = 1; i <= n; i++) {
+                text += "Loop function" + i + "<br>"; 
+
+            }
+            document.getElementById("demo5").innerHTML = text;
+        </script>
+
+        <p id="demo7"></p>
+
+        <tr>
+            <th>
+                Firstname
+            </th>
+            <th>
+                Lastname
+            </th>
+            <th>
+                Age
+            </th>
+        </tr>
+
+        <script>
+            const marks = ["25", "32", "47", "13", "56"];
+            text = "";
+
+            for (let i = 1; i <= marks; i++) {
+                if (marks = 35) {
+                text += "pass" + i + "<br>";
+                } else 
+                text += "fail" + i + "<br>";
+            }
+
+            document.getElementById("demo7").innerHTML = text;
+
+        </script>
+
+        <p id="tex"></p>
+        <p id="tex1"></p>
+
+        <script>
+            const stu = [ ["Amit", "Aman", "Vinay", "Rahul", "Pinki", "Virat", "Reachal"],
+                         ["34", "54", "23", "47", "55", "79" ]
+                    ];
+
+            for (let i = 0; i <= stu.length ; i++);{
+
+            document.getElementById("tex").innerHTML = stu;
+
+            }
+        </script>
+
+        <p id="tex2"></p> 
+
+        <script>
+            const name = ["Nagpur", "Jaipur", "Pune", "Sikar", "Jhunjhunu"];
+
+              document.getElementById("tex2").innerHTML = name [3];
+        </script>
+
+        <p id="tex3"></p>
+
+        <script>
+            const cla = ["1st", "2nd","3rd", "4th", "5th"];
+            cla [4] = "6th";
+            document.getElementById("tex3").innerHTML = cla;
+        </script>
+
+        <p id="tex4"></p>
+
+        <script>
+            const p = ["Radhika", "Sarita", "Divya", "Garima", "Tejal"];
+            p [2] = "Nilam";
+
+            document.getElementById("tex4").innerHTML = p;
+        </script>
+
+        <p id="num"></p>
+        <p id="num1"></p>
+        <p id="num2"></p>
+        <p id="num3"></p>
+        <p id="num4"></p>
+        <p id="num5"></p>
+        <p id="num6"></p>
+        <p id="num7"></p>
+        <p id="num8"></p>
+        <p id="num9"></p>
+        <p id="num10"></p>
+
+        <script>
+            const rul = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+            let rLen = 10;
+
+                for (let i = 0; i < rLen; i++) {
+                    tex +=  rul[i] + "<br>"; 
+                }
+                
+                document.getElementById("num" + i).innerHTML = tex;
+        </script>
+
+        <p id="web"></p>
+
+        <script>
+            const t = ["20", "peace", "Hero", "true", "tell"];
+            
+              for (let i = 0; i < t; i++) {
+                  tel = t[i];
+              }
+
+                dacoment.getElementById("web").innerHTML = tel;
+            
+        </script>
+
+        </body>
+        </html>
