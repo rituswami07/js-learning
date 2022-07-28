@@ -3,8 +3,9 @@
     <head>
         <titel>Function</titel>
     </head>
-    <body>
-        <h2>JavaScript Function</h2>
+    <body style = "text-align:center;">
+
+        <h2 style = "color:greenyellow">JavaScript Function</h2>
 
         <p>This example calls a function which performs a calculation, and returns the result:</p>
 
@@ -70,5 +71,86 @@
             } 
             pass(60);
         </script>
+
+        <p id="demo3"></p>
+
+        <script>
+            function Message(Show) {
+                for(var i = 0; i < Show.length; i++) {
+                    
+                    document.getElementById("demo3").innerHTML = i;
+                }
+            }
+            Message("Hello", "World");
+        </script>
+
+        <h2 id="demo2">This content will be change</h2>
+
+        <button onClick="changeText()">Click me</button>
+
+        <script>
+            var heading = document.getElementById("demo2");
+
+            var changeText = function(sum) {
+                heading.innerHTML = "Hello" +sum+ "welcome to website";
+            }
+        </script>
+
+        <p id="Up" style = "font-size:19px; font-weight: bold;"></p>
+
+        <button onClick = "Up()">Click here</button>
+
+        <p id = "Down" style = "color: green; font-size: 24px; font-weight: bold;"></p>
+            
+        <script>
+            var up   = document.getElementById('Up');
+            var down = document.getElementById('Down');
+
+            function firstFun(Str) {
+                down.innerHTML = Str;
+            }
+
+            
+        </script>
+
+        <p>Click the following button to call the function</p>
+
+        <button onClick="sayHello('Rahul' , '7')" value = "Say Hell">Click the button</button>
+
+        <script>
+            function sayHello(name , age) {
+                console.log(name + "is" + age + "year old.");
+            }
+        </script>
+
+        <script>
+            var arr = [2, 2, 3, 4];
+
+            Array.prototype.first = function() {
+                return this[0];
+            }
+
+            console.log(arr.first());
+        </script>
+
+        <p id="example"></p>
+
+        <script>
+            var a = ["green", "red", "pink", "blue", "purple"];
+            color(a);
+             aLen = 5;
+
+            function color(x) {
+                for (i = 0; i < a.length; i++) {
+                 var func = a[i];
+
+                 return(x);
+                }
+            }
+
+            document.getElementById("example").innerHTML = a + i;
+            
+        </script>
+
     </body>
 </html>

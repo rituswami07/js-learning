@@ -99,7 +99,7 @@
                 text += "Loop function" + i + "<br>"; 
 
             }
-            document.getElementById("demo5").innerHTML = text;
+            document.getElementById("demo6").innerHTML = text;
         </script>
 
         <p id="tex"></p>
@@ -169,12 +169,40 @@
 
         <script>
             const t = ["20", "peace", "Hero", "true", "tell"];
+            let tLen = 4; 
             
-              for (let i = 0; i < t; i++) {
+              for (let i = 0; i < tLen; i++) {
                   tel = t[i];
               }
 
                 document.getElementById("web").innerHTML = tel;
+            
+        </script>
+
+        <h2>JavaScript Array</h2>
+
+        <button onClick="getAddress()">Show Address</button>
+
+        <p id="example"></p>
+
+        <script>
+
+                var address = ["874", "Station Road", "New York", "USA"];
+
+                function color() {
+
+                var html = "<table border='1px'>";
+
+                    for(var i = 0; i < address.length; i++){
+                        html = "<tr>";
+                        html = "<td>" + address[i] + "</td>";
+                        html = "</tr>";    
+                    html = "</table>";
+                        
+                }
+            }  
+
+                    document.getElementById("example").innerHTML = html + i;
             
         </script>
 
