@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+     <titel>Object</title>
+     </head>
+
+     <body style = "text-align:center;">
+         <h2 style = "color:chartreuse;">JavaScript Object</h2>
+
+          <h2 style="color:darkorange;">Example 1</h2>
+          <p id="demo"></p>
+
+          <script>
+              let person = {
+                  Id     : 101,
+                  name   : "Jack",
+                  salary : 40000
+              };
+
+              document.getElementById("demo").innerHTML = person.Id +" "+ person.name +" "+ person.salary;
+          </script>
+
+          <h2 style="color:darkorange;">Example 2</h2>
+           <p id="demo1"></p>
+            <script>
+                let stu = {
+                    Name : "Amit",
+                    Age  : 23,
+                    Rollno : 15,
+                    Family : {
+                        Fathername : "Ramesh",
+                        Mothername : "Siya",
+                        Sister     : "Divya"
+                    }
+                };
+
+                document.getElementById("demo1").innerHTML = stu.Name + stu.Age + stu.Rollno +" "+ stu.Family.Fathername + stu.Family.Mothername + stu.Family.Sister;
+            </script>
+
+            <h2 style= "color:darkorange;">Example 3</h2>
+             <p id="demo3"></p>
+              <script>
+                  let a = {
+                     arr : ["Rishav", "Vanshika", "Tiya"],
+                     bill : 2000,
+                  }
+
+                  document.getElementById("demo3").innerHTML = a.arr[1] + a.bill;
+              </script>
+
+              <h2 style="color:darkorange;">Example 4</h2>
+               <p id="demo4"></p>
+               <p id="demo5"></p>
+               <p id="demo6"></p>
+                <script>
+                    let nam = {
+                        fname : "Riya",
+                        lname : "Shehgal",
+                        hobbies : ["reding","playing", "dancing"],
+                        weekdays : ["sun", "mon", "tue", "wed", "thu", "fri", "sat"],
+                    }
+
+                    document.getElementById("demo4").innerHTML = nam.fname +" "+ nam.weekdays[0] +" "+ nam.weekdays[1]+" "+ nam.weekdays[2]+" "+ nam.hobbies[0];
+                    document.getElementById("demo5").innerHTML = nam.weekdays[3] +" "+ nam.weekdays[4] +" "+ nam.hobbies[1]; 
+                    document.getElementById("demo6").innerHTML = nam.weekdays[5] +" "+ nam.weekdays[6] +" "+ nam.hobbies[2];
+                </script>
+     </body>
+     </html>    
