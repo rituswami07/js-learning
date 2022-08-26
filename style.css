@@ -1,188 +1,212 @@
-html {
-    height: 100%;
-    width: 100%;
-    
-}
 
 body {
     height: 100%;
     width: 100%;
-    background-color:rgb(226, 236, 181);
+    background-color: rgb(255, 255, 255);
     scroll-behavior: auto;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', 'Arial', 'sans-serif';
 }
 
-/* Header/logo Title */
 .header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: rgb(110, 141, 158);
     text-align: center;
-    padding: 60px;
-    background: #1abc9c;
-    color: white;
-    font-weight: 300;
+    border-radius: 2px;
 }
 
-.grad1 {
-    height: 150px;
-    text-align: center;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+.main-header {
+    max-width: 1800px;
+    padding: 8px 40px;
+    margin:0 auto;
+    display: flex;
 }
 
 .header-left {
-    margin-top: -15px;
-    margin-left: 10px;
+    margin-left: 15px;
+    width: 20%;
 }
 
-.navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+.img {
+    margin-top: 15px;
+    margin-left: 40px;
+    position:relative;
+}
+
+.header-right {
+    width:80%;
     color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: -150px;
 }
 
-.navbar a:right {
-    float: right;
-}
-
-.navbar a:hover {
-    background-color: #ddd;
+.fill-btn {
+    background-color:#ccc;
     color: black;
-}
-
-.navbar a:active {
-    background-color: rgb(167, 20, 20);
-    color: white;
-}
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: column;
-}
-
-h2 {
-    color:blue;
-}
-
-.h1 {
-    color: white;
-}
-
-.dropbtn {
-    margin-left: 40%;
-    margin-top: -90%;
-    background-color: #ee7dcc;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    width: 13%;
+    border-radius: 4px;
+    cursor:pointer;
     border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    margin-left: 95%;
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
+    margin-top: 30px;
+    margin-right: -20px;
+    padding: 1px; 
     text-align: center;
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
+    font-size: 15px;
 }
 
-
-.main{
-    flex: 70%;
-    background-image: url(2602.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    padding: 20px;
-    background-size: 100% 100%;
+.fill-btn:hover {
+    background-color: #84778b;
     color: white;
+}
+
+.small {
+    color: yellow;
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+.nav {
+    color:black;
+    background-color: #f1f1f1;
     text-align: center;
-    font-size: 1.5rem;
+    width: 100%;
+    margin-top: -10px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
 }
 
-/* Fack image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 40%;
-    padding: 20px;
-    margin-top: 50px;
-    margin-left: 30%;
-}
-
-.fakeimg2 {
-    background-color: #aaa;
-    width: 40%;
-    padding: 20px;
-    float: left;
-    margin-left: 30%;
-    margin-top: 50px;
-}
-
-.fakeimg3 {
-    background-color:cyan;
-    width: 40%;
-    padding: 20px;
-    margin-left: 30%;
-    margin-top: 50px;
-}
-
-.footer {
-    margin-top: 20%;
-    padding: 20px;
+ul{
     text-align: center;
-    background: #ddd;
+    float: right;
+    margin-top: 2px;
 }
 
-.last-class {
+.topnav li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-weight: 200;
+    width:auto;
+}
+
+.topnav li:hover {
+    border-radius: 10px;
+    background-color: rgb(230, 214, 224);
+    color: black;
+}
+
+.add-box {
+    color:rgb(236, 242, 243);
+    background-color: #84778b;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 7%;
+    width: 60%;
+    padding: 70px;
+    margin-left: 17%;
+
+}
+
+.heading-block {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20%;
+}
+.img-1 {
+    margin-top: -43%;
+    margin-right: 200%;
+    border-radius: 4px;
+}
+.input {
+    color: black;
+    background-color:rgb(230, 214, 224);
+    margin-top: 3%;
+    margin-left: 42%;
+    width:50%;
+    padding: 10px 12px;
+    border-radius: 3px;
+}
+.input-box {
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+
+.submit-btn {
+    background-color:rgb(230, 214, 224);
+    color: black;
+    width: 50%;
+    padding:1px 14px;
+    border-radius: 4px; 
+    cursor: pointer;
+    border: none;
+    margin-left: 42%;
+}
+
+.submit-btn:hover {
+    background-color: #9e06f0;
+    color: white;
+}
+
+.list-box {
+    background-color:aqua;
+    color: black;
+    text-align:center;
+    border-radius: 15px;
+    margin-top: 7%;
+    width: 50%;
+    padding: 70px;
+    margin-left: 17%;
+}
+
+.table {
     margin-top: 10%;
-    margin-left: 10%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border-collapse: collapse;
+    width: 100%;
+    
 }
 
-/* Resposive layout - when the screen is less than 700px wide, make the two
-columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
+.th, td {
+    padding: 20px;
+    padding-right: 150px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}  
+
+.last-box {
+    background-color:rgb(240, 138, 192);
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 7%;
+    width: 50%;
+    padding: 70px;
+    margin-left: 17%;
 }
 
-/* Responsive layout - when the scree is less than 400px wide, make the navigation links 
-stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+.delet-btn {
+    background-color:rgb(255, 255, 255);
+    color: black;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 35%;
+    border-radius: 5px;
+}
 
-} 
+.delet-btn:hover {
+    background-color:deeppink;
+    color:rgb(255, 255, 255);
+}
