@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<htmml>
+    <head>
+        <title>
+            Macking DOM Events
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <img src="catbg607610826.jpg" width="50px" height="50px">
+        </header>
+
+        <h2>Example 1</h2>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Mouse Over Me</div>
+
+        <script>
+            function mOver(obj) {
+                obj.innerHTML = "Thank you"
+            }
+
+            function mOut(obj) {
+                obj.innerHTML = "Welcome"
+            }
+        </script>
+
+          <h2>Example 2</h2>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color:#D94A38;width:90px;height:20px;padding:40px;">Click me</div>
+
+        <script>
+            function mDown(obj) {
+                obj.style.backgroundColor = "#1ec5e5";
+                obj.innerHTML = "Release Me";
+            }
+
+            function mUp(obj) {
+                obj.style.backgroundColor= "#D94A38";
+                obj.innerHTML= "Thank You";
+            }
+        </script>
+
+       <h2>Example 3</h2>
+        <label>Enter Value 1: </lable>
+        <input type="text" id="test1" />
+        <br><br>
+        <label>Enter Value 2: </label>
+        <input type="text" id="test2" />
+        <br><br>
+        <button onclick="getAdd()">Click To Add</button>
+        <p id="result"></p>
+
+        <script type="text/javascript">
+            function getAdd() {
+                // Fetch the value of input with id test1
+                const num1 = Number(document.getElementById("test1").value);
+
+                // Fetch the value of input with id test2
+                const num2 = Number(document.getElementById("test2").value);
+                const add = num1 + num2;
+                console.log(add);
+
+                // Displays the result in paragraaph using dom
+                document.getElementById("result").innerHTML = "Addition : " + add;
+
+                // Changes the color of paragraph tag with red
+                document.getElementById("result").style.color = "red";
+            }
+        </script>
+
+        <h2>Example 4</h2>
+
+        <p>This example uses the addEventListener() method to add many event on the same button.</p>
+
+        <button id="myBtn">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementById("myBtn");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("click", mySecondFunction);
+            x.addEventListener("mouseout", myThirdFunction);
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Moused over!<br>";
+            }
+
+            function mySecondFunction() {
+                document.getElementById("demo").innerHTML = "Clicked!<br>";
+            }
+
+            function myThirdFunction() {
+                document.getElementById("demo").innerHTML = "Moused out!<br>";
+            }
+        </script>
+
+
+    </body>
+    </htmml>

@@ -1,0 +1,28 @@
+.html {
+    height: 100%;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}  
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin-top: -10%;
+    padding: 0;
+}
+
+.navbar a {
+    color:white;
+    float: left;
+    text-decoration:none;
+    text-align: center;
+    display: block;
+    padding: 14px 20px;
+}

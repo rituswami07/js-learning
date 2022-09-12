@@ -7,7 +7,7 @@
      <body style = "text-align:center;">
          <h2 style = "color:chartreuse;">JavaScript Object</h2>
 
-          <h2 style="color:darkorange;">Example 1</h2>
+          <h2 style="color:crimson;">Example 1</h2>
           <p id="demo"></p>
 
           <script>
@@ -20,7 +20,7 @@
               document.getElementById("demo").innerHTML = person.Id +" "+ person.name +" "+ person.salary;
           </script>
 
-          <h2 style="color:darkorange;">Example 2</h2>
+          <h2 style="color:crimson;">Example 2</h2>
            <p id="demo1"></p>
             <script>
                 let stu = {
@@ -37,7 +37,7 @@
                 document.getElementById("demo1").innerHTML = stu.Name + stu.Age + stu.Rollno +" "+ stu.Family.Fathername + stu.Family.Mothername + stu.Family.Sister;
             </script>
 
-            <h2 style= "color:darkorange;">Example 3</h2>
+            <h2 style= "color:crimson;">Example 3</h2>
              <p id="demo3"></p>
               <script>
                   let a = {
@@ -48,7 +48,7 @@
                   document.getElementById("demo3").innerHTML = a.arr[1] + a.bill;
               </script>
 
-              <h2 style="color:darkorange;">Example 4</h2>
+              <h2 style="color:crimson;">Example 4</h2>
                <p id="demo4"></p>
                <p id="demo5"></p>
                <p id="demo6"></p>
@@ -58,11 +58,25 @@
                         lname : "Shehgal",
                         hobbies : ["reding","playing", "dancing"],
                         weekdays : ["sun", "mon", "tue", "wed", "thu", "fri", "sat"],
-                    }
+                    };
 
                     document.getElementById("demo4").innerHTML = nam.fname +" "+ nam.weekdays[0] +" "+ nam.weekdays[1]+" "+ nam.weekdays[2]+" "+ nam.hobbies[0];
                     document.getElementById("demo5").innerHTML = nam.weekdays[3] +" "+ nam.weekdays[4] +" "+ nam.hobbies[1]; 
                     document.getElementById("demo6").innerHTML = nam.weekdays[5] +" "+ nam.weekdays[6] +" "+ nam.hobbies[2];
                 </script>
+
+                <h2 style="color:crimson;">Example 5</h2>
+                 <p id="demo7"></p>
+                  <script>
+                       let some = {
+                           no1 : "One",
+                           no2 : "Two",
+                           no3 : "Three",
+                           no4 : "Four",
+                           no5 : "Five"
+                           
+                       }
+                       document.getElementById("demo7").innerHTML = some.no1 +" "+ some.no2 +" "+ some.no3 +" "+ some.no4 +" "+ some.no5;
+                  </script>
      </body>
      </html>    
