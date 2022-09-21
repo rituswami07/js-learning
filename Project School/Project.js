@@ -1,4 +1,4 @@
-var arr = [];
+window.arr = [];
 
 
 
@@ -110,9 +110,11 @@ function switchPage(pageId) {
     if (pageId == 0) {
         
       document.getElementById("demo").innerHTML = a;
+      switchPage();
     } else if (pageId == 1) {
       document.getElementById("demo").innerHTML = b;
     } else if (pageId == 2) {
+      list();
       document.getElementById("demo").innerHTML = c;
     } else if (pageId == 3) {
       document.getElementById("demo").innerHTML = d;
@@ -150,8 +152,23 @@ function subMit() {
     Roll : roll,
     Id    : id
   };
-  arr.push(obj);
+  window.arr.push(obj);
+ 
 }
+
+function list(){
+  const n = 5;
+  let text = "";
+
+  for (let i = 0; i <= window.length; i++){
+   text = window.arr[i].Student + "<br>";
+          ///console.log(window.arr[i].Student)
+  }
+
+  document.getElementById("demo").innerHTML = text;
+
+}
+
 
 
 
