@@ -5,7 +5,8 @@ window.arr = [];
 function switchPage(pageId) {
 
 
-    var a =   `<div class="add-box" style="height:500px">
+    var a =  
+      `<div class="add-box" style="height:500px">
     <div class="heading-block">
       <h2>Information of School</h2>
       <p>Add information</p>
@@ -29,7 +30,6 @@ function switchPage(pageId) {
       <div id="result"></div>
     <div class="img-1">
      <img src="th.jpeg-6" width="300px" height="300px">
-     
   </div>`
 
 
@@ -110,20 +110,14 @@ function switchPage(pageId) {
     if (pageId == 0) {
         
       document.getElementById("demo").innerHTML = a;
-      switchPage();
     } else if (pageId == 1) {
       document.getElementById("demo").innerHTML = b;
     } else if (pageId == 2) {
       list();
-      document.getElementById("demo").innerHTML = c;
     } else if (pageId == 3) {
       document.getElementById("demo").innerHTML = d;
     }
 
-
-  
-
-  console.log(pageId(0));
 }
 
 function subMit() {
@@ -157,11 +151,17 @@ function subMit() {
 }
 
 function list(){
-  const n = 5;
   let text = "";
 
-  for (let i = 0; i <= window.length; i++){
-   text = window.arr[i].Student + "<br>";
+  var html = "<table border='1px solid>";
+  html = "<tr>";
+
+  for (let i = 0; i < window.arr.length; i++){
+    var studentRecord = window.arr[i];
+   text = studentRecord.Student + "<br>" + studentRecord.Fathername + "<br>" + studentRecord.Mname + "<br>" + studentRecord.Class + "<br>" + studentRecord.Roll + "<br>" + studentRecord.Id + "<br>";
+   html = "<td>" + window.arr[i]+ "</td>";
+   html = "</tr>";
+   html = "</table>";
           ///console.log(window.arr[i].Student)
   }
 
@@ -169,7 +169,7 @@ function list(){
 
 }
 
-
+ switchPage(pageId(2));
 
 
 
